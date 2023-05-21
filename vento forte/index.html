@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vento Forte</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="cabecalho">
+            <div class="logo">
+                <a href="index.html"><img src="img/Group 113.png" alt=""></a>
+            </div>
+            <div class="login">
+                <a href="login.html"><img src="img/Group 109.png" alt=""></a>
+            </div>
+        </div>
+        <div class="categorias">
+            <a href="">Início</a>
+            <a href="">Produtos</a>
+            <a href="">Minha Conta</a>
+            <a href="">Sobre Nós</a>
+        </div>
+        <div class="banner">
+            <img src="img/Group 119.png" alt="">
+        </div>
+        <div class="baloes">
+            <div class="balao">REDES SOCIAIS</div>
+            <div class="balao">LANÇAMENTOS</div>
+            <div class="balao">SOBRE NÓS</div>
+        </div>
+        <p class="emdestaque">Produtos em Destaque</p>
+        <div class="em_destaque">
+            <div class="secao1">
+                <a href="produtos.html"><img src="img/Rectangle 7.png" alt=""></a>
+                <a href="produtos.html"><p>{{ ventila1.a123 }}</p></a>
+            </div>
+            <div class="secao2">
+                <div class="mini_secao1">
+                    <div class="ventilador_produto">
+                        <a href="produtos.html"><img src="img/Rectangle 8.png" alt=""></a>
+                        <a href="produtos.html"><p>{{ ventila2.a123 }}</p></a>
+                    </div>
+                    <div class="ventilador_produto">
+                        <a href="produtos.html"><img src="img/Rectangle 9.png" alt=""></a>
+                        <a href="produtos.html"><p>{{ ventila3.a123 }}</p></a>
+                    </div>
+                </div>
+                <div class="mini_secao">
+                    <a href="produtos.html"><img src="img/Rectangle 10.png" alt=""></a>
+                    <a href="produtos.html"><p>{{ ventila4.a123 }}</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="motivos">
+            <div class="motivos2">
+                <img src="img/Group 117.png" alt="">
+                <p>Controle </br>Pelo Celular</p>
+            </div>
+            <div class="motivos2">
+                <img src="img/Group 118.png" alt="">
+                <p>Super </br>Econômico</p>
+            </div>
+        </div>
+        <div class="newsletter">
+            <form @submit.prevent="inscrever">
+                <p>Receba Novidades</p>
+                <input v-model="email" type="email" placeholder="Endereço de e-mail" />
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+        <div class="infos">
+            <div class="pagamentos">
+                <p>Métodos de Pagamento</p>
+                <img src="img/image 1.png" alt="">
+            </div>
+            <div class="redes">
+                <p>Redes Sociais</p>
+                <img src="img/Group 12.png" alt="">
+            </div>
+        </div>
+        <div class="rodape">
+            <p>Brenda Marini, João Victor Garcia - 2023</p>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                ventila1: {
+                    a123: 'Ventilador Preto'
+                },
+                ventila2: {
+                    a123: 'Ventilador Branco'
+                },
+                ventila3: {
+                    a123: 'Ventilador Dourado'
+                },
+                ventila4: {
+                    a123: 'Ventilador de Teto'
+                },
+                email: ''
+            }
+        });
+    </script>
+</body>
+</html>

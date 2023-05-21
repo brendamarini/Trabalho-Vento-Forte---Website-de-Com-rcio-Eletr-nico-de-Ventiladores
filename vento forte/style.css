@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+a{
+   text-decoration: none; 
+   color: #000;
+}
+.cabecalho{
+    background-color: #084347;
+    display: flex;
+    padding: 40px;
+}
+.logo{
+    margin-left: 0;
+}
+.login{
+    margin-right: 0;
+}
+.login img{
+    width: 45px;
+}
+.categorias{
+    background-color: #7A9EA0;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    padding: 10px;
+}
+.categorias a{
+    text-decoration: none;
+    color: #fff;
+}
+.banner{
+    margin: 33px;
+}
+.banner img{
+    width: 100%;
+}
+.baloes{
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.balao{
+    width: 400px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: #084347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.em_destaque{
+    display: flex;
+    margin: 60px;
+    height: 700px;
+}
+.secao1 img{
+    width: 514px;
+}
+.ventilador_produto img{
+    width: 220px;
+}
+.mini_secao1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.emdestaque{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+.motivos{
+    width: 848px;
+    margin-left: 250px;
+    display: flex;
+    margin-top: 88px;
+    margin-bottom: 120px;
+}
+.motivos2{
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .newsletter{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 336px;
+    border-radius: 12px;
+    background-color: #084347;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .newsletter p{
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .newsletter input{
+    border-radius: 10px;
+    border-color: none;
+  }
+  .newsletter button{
+    background-color: #7A9EA0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .infos{
+    margin-left: 140px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+  }
+  .rodape{
+    background-color: #084347;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  .faca_loginho{
+    margin-top: 100px;
+    width: 800px;
+    background-color: #E9E9E9;
+    margin-bottom: 100px;
+    border-radius: 50px;
+  }
+  
+  .textologin{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 52px;
+    padding-bottom: 40px;
+  }
+  .email_login{
+    padding-left: 100px;
+    padding-right: 200px;
+    border-radius: 8px;
+    border: #fff;
+  }
+  .login_inputs{
+    width: 600px;
+  }
+  .senha_login{
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: #fff;
+    margin-bottom: 10px;
+  }
+  .botao_login{
+    background-color: #084347;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    width: 620px;
+    margin-bottom: 15px;
+  }
+  .ntenhoconta{
+    text-align: center;
+    padding-bottom: 52px;
+  }
+  .imagens_detalhe{
+    width: 770px;
+    margin-left: 50px;
+  }
+  .preco{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+  .produto_nome_1{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .imagemum{
+    margin-top: 15px;
+  }
+  .imagemdois{
+    margin: 0;
+  }
+  .compras{
+    margin-top: 25px;
+    width: 400px;
+    margin-bottom: 45px;
+  }
+  .descricaoum{
+    margin-top: 110px;
+    margin-left: 125px;
+  }
+  .titulo_descricaco{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .descricaodois{
+    font-size: 18px;
+    margin-right: 350px;
+    margin-bottom: 95px;
+  }
+  .imagemprodutos{
+    margin-right: 125px;
+    width: 1000px;
+    margin-bottom: 40px;
+  }

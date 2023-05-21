@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <title>Vento Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="logo">
+            <a href="index.html"><img src="img/Group 113.png" alt=""></a>
+        </div>
+        <div class="login">
+            <a href="login.html"><img src="img/Group 109.png" alt=""></a>
+        </div>
+    </div>
+    <div class="categorias">
+        <a href="">Início</a>
+        <a href="">Produtos</a>
+        <a href="">Minha Conta</a>
+        <a href="">Sobre Nós</a>
+    </div>
+    <div class="preco" id="app">
+        <div class="imagens_detalhe">
+            <img src="img/Group 26.png">
+        </div>
+        <div class="secao1produto">
+            <p class="produto_nome_1">
+                {{ nome_do_produto }}
+            </p>
+            <img class="imagemum" src="img/Group 123.png" alt="">
+            <img class="imagemdois" src="img/Group 124.png" alt="" class="preco">
+            <p>No boleto bancário </br></br>
+                1x de R$ 69,90 ou em até 3x de R$ 23,30 sem juros no cartão de crédito </p>
+            <img class="compras" src="img/Group 125.png" alt="">
+            <img src="img/Group 126.png" alt="">
+        </div>
+    </div>
+    <img src="img/Group 121 (1).png" alt="">
+    <div class="descricaoum">
+        <p class="titulo_descricaco">
+            Descrição do Produto
+        </p>
+        <p class="descricaodois">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+        </p>
+        <div>
+            <p class="titulo_descricaco">Nossos outros produtos</p>
+            <img class="imagemprodutos" src="img/Group 127.png" alt="">
+        </div>
+    </div>
+    <div class="infos">
+        <div class="pagamentos">
+            <p>Métodos de Pagamento</p>
+            <img src="img/image 1.png" alt="">
+        </div>
+        <div class="redes">
+            <p>Redes Sociais</p>
+            <img src="img/Group 12.png" alt="">
+        </div>
+    </div>
+    <div class="rodape">
+        <p>Brenda Marini, João Victor Garcia - 2023</p>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                nome_do_produto: 'Ventilador Preto'
+            }
+        });
+    </script>
+</body>
+</html>

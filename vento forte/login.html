@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <title>Vento Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="logo">
+            <a href="index.html"><img src="img/Group 113.png" alt=""></a>
+        </div>
+        <div class="login">
+            <a href="login.html"><img src="img/Group 109.png" alt=""></a>
+        </div>
+    </div>
+    <div class="categorias">
+        <a href="">Início</a>
+        <a href="">Produtos</a>
+        <a href="">Minha Conta</a>
+        <a href="">Sobre Nós</a>
+    </div>
+    <div class="faca_loginho" id="app">
+        <p class="textologin">FAÇA SEU LOGIN</p>
+        <div class="login_inputs">
+            <input class="email_login" type="email" placeholder="Digite seu E-mail" v-model="email">
+            <input class="senha_login" type="password" placeholder="Digite sua senha" v-model="senha">
+            <a href="index.html"><button class="botao_login" @click="faca_Loginho">Faça seu login</button></a>
+            <a href="criar_conta.html"><p class="ntenhoconta">Não tenho conta</p></a>
+        </div>
+    </div>
+    <div class="infos">
+        <div class="pagamentos">
+            <p>Métodos de Pagamento</p>
+            <img src="img/image 1.png" alt="">
+        </div>
+        <div class="redes">
+            <p>Redes Sociais</p>
+            <img src="img/Group 12.png" alt="">
+        </div>
+    </div>
+    <div class="rodape">
+        <p>Brenda Marini, João Victor Garcia - 2023</p>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                email: '',
+                senha: ''
+            },
+            methods: {
+                faca_Loginho() {
+                    console.log('Email:', this.email);
+                    console.log('Senha:', this.senha);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
